@@ -1,266 +1,525 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mi esencia</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Quicksand', sans-serif;
-      background: linear-gradient(to bottom right, #f8c8dc, #ffffff);
-      overflow-x: hidden;
-    }
-
-    .sticker {
-      position: fixed;
-      opacity: 0.2;
-      z-index: 0;
-      width: 80px;
-      height: 80px;
-      pointer-events: none;
-      animation: float 8s ease-in-out infinite;
-    }
-
-    .sticker:nth-child(1) { top: 10%; left: 5%; }
-    .sticker:nth-child(2) { top: 20%; right: 10%; }
-    .sticker:nth-child(3) { bottom: 15%; left: 15%; }
-    .sticker:nth-child(4) { bottom: 10%; right: 5%; }
-    .sticker:nth-child(5) { top: 50%; left: 45%; }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 60px auto;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      padding: 30px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      position: relative;
-      z-index: 1;
-    }
-
-    h1 {
-      text-align: center;
-      color: #d63384;
-    }
-
-    .letter {
-      white-space: pre-line;
-      line-height: 1.6;
-      color: #444;
-    }
-
-    .music-floating {
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-      background-color: #7c3f28;
-      color: #f8d7b4;
-      border-radius: 16px;
-      padding: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      z-index: 1000;
-      max-width: 240px;
-      flex-wrap: wrap;
-    }
-
-    .music-cover {
-      width: 50px;
-      height: 50px;
-      background-color: #f8d7b4;
-      border-radius: 8px;
-      background-size: cover;
-      background-position: center;
-      flex-shrink: 0;
-    }
-
-    .music-controls {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 6px;
-      flex-grow: 1;
-    }
-
-    .song-title {
-      font-size: 14px;
-      font-weight: 600;
-      color: #ffdcb5;
-      text-align: left;
-      max-width: 160px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 6px;
-    }
-
-    .music-controls button {
-      background: none;
-      border: none;
-      color: #f8d7b4;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .music-controls audio {
-      width: 100%;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        margin: 20px;
-        padding: 20px;
-      }
-
-      .music-floating {
-        max-width: 90%;
-        bottom: 10px;
-        right: 5%;
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .song-title {
-        text-align: center;
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <!-- Stickers -->
-  <img class="sticker" src="snoopy.png" alt="Snoopy" />
-  <img class="sticker" src="hello-kitty.png" alt="Hello Kitty" />
-  <img class="sticker" src="pacheco.png" alt="Pacheco" />
-  <img class="sticker" src="my-melody.png" alt="My Melody" />
-  <img class="sticker" src="snoopy.png" alt="Snoopy" />
-
-  <div class="container">
-    <h1>Para ti...</h1>
-    <div class="letter">
-      <!-- Aquí va tu carta personalizada -->
-       Hola, buenas tardes o noches o cuando lo estés leyendo. Te quería decir unas cosas que en persona, por timidez, no te podría decir. También ya sé que tal vez esto no llegue a nada, que solo haya escrito esto y que no cambie nada, pero me siento más tranquilo sabiendo que sepas lo tanto que puedo expresar lo que siento. A solo irme sin más y dejar esto como algo inconcluso... Bueno, sin más alargar esta parte, aquí inicia la carta. Es la primera que hago.
-
-Estoy enamorado de ti, es algo que se sabe bien. Y si piensas que esto fue algo de ahora, déjame decirte que estás en lo incorrecto. Desde la primera vez que te vi, me flechaste. Era un sentimiento muy raro para ese entonces, es la primera y única vez que lo sentía, algo nuevo, algo raro. Sentía ganas de acercarme y hablar, pero algo me detenía: miedo, timidez. Me decía "fua, alguien como ella nunca estaría con alguien como yo". En el momento que te vi, en ese año, era mi peor año. No tenía confianza en mí mismo, me sentía feo, gordo, cosa por la cual no intenté nada, ni siquiera un hola. Cosa que aún me sigo sintiendo así, la verdad. Aún no tengo esa confianza conmigo mismo, pero trato de mejorar, combatir miedos. Y ahora que me siento con más confiancita, traté algo contigo. Te di una flor. Aunque no me creas, ese día estaba muy nervioso, tenía mucho miedo la verdad, y lo hice aun teniendo todo eso en mente. Luego —es algo que lo acepto— te evité con la mirada, pero fue porque no sabía qué hacer, no sabía qué decir. Como dije, es la primera vez que hago esto, no sé qué procede.
-
-Hablé con muchas personas, pedí consejos, hacía esos consejos y ninguno funcionaba. ¿Por qué no? No sé. Pero si tuviera que responder, es porque ninguno de esos consejos era yo mismo. Hace unos días hablé con un amigo mío, lo conoces, Jordy. Hablé con él, la charla más sincera que he tenido, y él no me dijo qué hacer, no me dio la clave de la vida, pero me dijo algo para crearla. Me dijo: "sé tú mismo". Me quedé pensando: ¿qué significa ser yo mismo? Y para mí es mostrar mi verdadero yo, aceptando las críticas y dando todo de mí. De ahí me salió el coraje de hacer esta carta, para —aunque sepa que esta carta no te hará cambiar de opinión, aunque crea que esto no te hará tener otra imagen de mí— te lo diré igualmente: me gustas.
-
-No uno sin emoción. Uno "me gustas" el cual lo pensé desde que nos vimos, uno que me guardé tanto tiempo y hasta ahora te lo digo. Me enamoré de tu voz sin haberla escuchado, y cuando la escuché, me enamoré más. Me enamoré de tu sonrisa sin haberla visto, y cuando la vi, me enamoré más. Me enamoré de ti.
-
-Me enamoré de ti ese día que te vi por primera vez. Cuando vi el brillo de tus ojos, cuando escuché tu voz y tuve el gusto de escuchar tu risa, me enamoré de ti sin saber quién eras.
-
-Eres la única que permanece en mi mente, por más que trato de olvidarte. Aunque no me veas como pareja, desearía ser otro y no poder tampoco ser un ebrio de amor.
-Si nunca nos hubiéramos conocido y te viera hoy por primera vez, me enamoraría de ti.
-Otra vez, a pesar de todo.
-
-Podré ser feo, alguien no interesante, sin algo que me defina, pero aún así movería cielo y tierra por estar contigo. Trataría de sacarte una risa.
-
-Se podría decir que antes de conocerte, mi vida era aburrida. No sentía ganas de venir al cole o de hacer las cosas, pero desde que te conocí trato de sacar mi mejor versión de toda mi vida.
-Desde que me levanto hasta que me acuesto, eres esa personita que hace que mi corazón se acelere.
-Eres esa persona con la cual quiero compartir mi vida. Suena algo raro o algo rápido estar toda la vida con alguien, suena algo desesperado ahora que lo pienso.
-Pero en esta carta quiero dejar toda mi esencia. Y te digo: si tuviste una experiencia mala en el pasado, algo por lo cual ya no te abres con los demás por miedo a que pase lo de antes, déjame decirte que yo haría lo posible para que no te sientas así.
-Escribí poemas que nunca te dije.
-Yo no quiero algo pasajero, quiero algo verdadero. Tal vez yo busque algo así y tú no, pero no soy adivino, así que aquí te lo digo: que quiero algo verdadero y bonito.
-
-La vida nunca va a ser perfecta, obvio, habrá problemas, inconvenientes. Pero yo no lo trataría... lo haría: atravesar esos problemas solo para estar contigo.
-¿Qué quieres a alguien carismático? Podría serlo.
-¿Qué quieres a alguien con humor? Podría serlo.
-¿Qué quieres a alguien serio? Podría serlo.
-Lo que me pidas que sea, lo podría ser o intentar.
-
-Bueno, le dejo fin a esto. Es mucho, tal vez ni leas hasta aquí o tal vez ni lo leas, o tal vez ni te entregue esto. Pero quiero decirte algo por último antes de finalizar:
-Te quiero desde el alma.
-Y también sé aceptar decisiones.
-Esta carta es para que supieras algo, como mi último intento de hacer que nazca algo.
-Pero creo que será inaudito.
-Si leíste todo esto y aun no crees que podamos ser algo en un futuro, simplemente ignora todo. Haz como si nunca hubiera pasado esto. Imagina que nunca te di esto, como si nunca te hubiera dado la flor.
-Pero si después de leer esto crees que sí podría nacer algo, dame señales. Un “hola” en WhatsApp, saludame o algo, porque apenas yo vea que aceptás, te daría el cielo y más.
-
-Bueno, te dejo. Es mucho texto, como dije, solo es una carta.
-Perdón si te sientes incómoda por algo que dije o algo que agregué. Esta carta está hecha para expresarme.
-Y como dije, si no crees que pase nada en algún futuro, olvida todo, como si nunca nos hubiéramos conocido, por favor.
-Y que no haya incomodidad, sería como lo último que pediría.
-
-Gracias.
-    </div>
-  </div>
-
-  <!-- Reproductor -->
-  <div class="music-floating">
-    <div id="music-cover" class="music-cover"></div>
-    <div class="music-controls">
-      <div id="song-title" class="song-title">Alas Rotas</div>
-      <div class="buttons">
-        <button onclick="prevSong()">⏮️</button>
-        <button onclick="togglePlay()">⏯️</button>
-        <button onclick="nextSong()">⏭️</button>
+<html><body><div align="left">
+ <font style="font-size:16;">&lt;!DOCTYPE&nbsp;html&gt;</font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;">&lt;html&nbsp;lang="es"&gt;</font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;head&gt;</font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;meta&nbsp;charset="UTF-8"&nbsp;/&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;meta&nbsp;name="viewport"&nbsp;content="width=device-width,&nbsp;initial-scale=1.0"&nbsp;/&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;title&gt;Para&nbsp;ti...&lt;/title&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;link&nbsp;rel="preconnect"&nbsp;href="https://fonts.googleapis.com"&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;link&nbsp;href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&amp;display=swap"&nbsp;rel="stylesheet"&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;style&gt;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;body&nbsp;{</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;0;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;0;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-family:&nbsp;'Quicksand',&nbsp;sans-serif;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;linear-gradient(to&nbsp;bottom&nbsp;right,&nbsp;#f8c8dc,&nbsp;#ffffff);</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overflow-x:&nbsp;hidden;</font></font></font></font>
+</div></body></html><html><body><div align="left">
+ <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+</div></body></html><html><body><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+   <div align="left">
+    <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker&nbsp;{</font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;fixed;</font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;opacity:&nbsp;0.2;</font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index:&nbsp;0;</font></font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;80px;</font></font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;80px;</font></font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pointer-events:&nbsp;none;</font></font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;animation:&nbsp;float&nbsp;8s&nbsp;ease-in-out&nbsp;infinite;</font></font></font></font>
+   </div>
+   <div align="left">
+    <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+   </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+      <div align="left">
+       <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker:nth-child(1)&nbsp;{&nbsp;top:&nbsp;10%;&nbsp;left:&nbsp;5%;&nbsp;}</font>
       </div>
-      <audio id="audio" onended="nextSong()" controls></audio>
-    </div>
-  </div>
-
-  <script>
-    const songs = [
-      {
-        title: "HASTA LA MUERTE",
-        src: "alas-rotas.mp3",
-        cover: "portada-musica.jpg"
-      },
-      {
-        title: "Reina Pepiada",
-        src: "reina-pepiada.mp3",
-        cover: "reina-pepiada.jpg"
-      }
-    ];
-
-    let currentSongIndex = 0;
-    const audio = document.getElementById("audio");
-    const cover = document.getElementById("music-cover");
-    const title = document.getElementById("song-title");
-
-    function loadSong(index) {
-      const song = songs[index];
-      audio.src = song.src;
-      cover.style.backgroundImage = `url('${song.cover}')`;
-      title.textContent = song.title;
-      audio.play();
-    }
-
-    function nextSong() {
-      currentSongIndex = (currentSongIndex + 1) % songs.length;
-      loadSong(currentSongIndex);
-    }
-
-    function prevSong() {
-      currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
-      loadSong(currentSongIndex);
-    }
-
-    function togglePlay() {
-      if (audio.paused) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
-    }
-
-    // Iniciar primera canción
-    loadSong(currentSongIndex);
-  </script>
-</body>
-</html>
+      <div align="left">
+       <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker:nth-child(2)&nbsp;{&nbsp;top:&nbsp;20%;&nbsp;right:&nbsp;10%;&nbsp;}</font></font>
+      </div>
+      <div align="left">
+       <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker:nth-child(3)&nbsp;{&nbsp;bottom:&nbsp;15%;&nbsp;left:&nbsp;15%;&nbsp;}</font></font></font>
+      </div>
+      <div align="left">
+       <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker:nth-child(4)&nbsp;{&nbsp;bottom:&nbsp;10%;&nbsp;right:&nbsp;5%;&nbsp;}</font></font></font></font>
+      </div>
+      <div align="left">
+       <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.sticker:nth-child(5)&nbsp;{&nbsp;top:&nbsp;50%;&nbsp;left:&nbsp;45%;&nbsp;}</font></font></font></font>
+      </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+         <div align="left">
+          <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;@keyframes&nbsp;float&nbsp;{</font>
+         </div>
+         <div align="left">
+          <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0%,&nbsp;100%&nbsp;{&nbsp;transform:&nbsp;translateY(0);&nbsp;}</font></font>
+         </div>
+         <div align="left">
+          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;50%&nbsp;{&nbsp;transform:&nbsp;translateY(-10px);&nbsp;}</font></font></font>
+         </div>
+         <div align="left">
+          <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+         </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+            <div align="left">
+             <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.container&nbsp;{</font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max-width:&nbsp;800px;</font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;60px&nbsp;auto;</font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;rgba(255,&nbsp;255,&nbsp;255,&nbsp;0.9);</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;20px;</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;30px;</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;8px&nbsp;24px&nbsp;rgba(0,0,0,0.1);</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;relative;</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index:&nbsp;1;</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom:&nbsp;180px;&nbsp;/*&nbsp;evita&nbsp;que&nbsp;el&nbsp;texto&nbsp;quede&nbsp;oculto&nbsp;por&nbsp;la&nbsp;música&nbsp;*/</font></font></font></font>
+            </div>
+            <div align="left">
+             <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+            </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+               <div align="left">
+                <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;h1&nbsp;{</font>
+               </div>
+               <div align="left">
+                <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align:&nbsp;center;</font></font>
+               </div>
+               <div align="left">
+                <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#d63384;</font></font></font>
+               </div>
+               <div align="left">
+                <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+               </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                  <div align="left">
+                   <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.letter&nbsp;{</font>
+                  </div>
+                  <div align="left">
+                   <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;white-space:&nbsp;pre-line;</font></font>
+                  </div>
+                  <div align="left">
+                   <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line-height:&nbsp;1.6;</font></font></font>
+                  </div>
+                  <div align="left">
+                   <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#444;</font></font></font></font>
+                  </div>
+                  <div align="left">
+                   <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                  </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                     <div align="left">
+                      <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-floating&nbsp;{</font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:&nbsp;fixed;</font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bottom:&nbsp;10px;</font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right:&nbsp;10px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;#7c3f28;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#f8d7b4;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;16px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;10px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box-shadow:&nbsp;0&nbsp;4px&nbsp;12px&nbsp;rgba(0,0,0,0.3);</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;flex;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;align-items:&nbsp;center;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gap:&nbsp;10px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index:&nbsp;1000;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max-width:&nbsp;240px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;14px;</font></font></font></font>
+                     </div>
+                     <div align="left">
+                      <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                     </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                        <div align="left">
+                         <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-cover&nbsp;{</font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;50px;</font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:&nbsp;50px;</font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:&nbsp;#f8d7b4;</font></font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-radius:&nbsp;10px;</font></font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-size:&nbsp;cover;</font></font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-position:&nbsp;center;</font></font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flex-shrink:&nbsp;0;</font></font></font></font>
+                        </div>
+                        <div align="left">
+                         <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                        </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                           <div align="left">
+                            <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-controls&nbsp;{</font>
+                           </div>
+                           <div align="left">
+                            <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display:&nbsp;flex;</font></font>
+                           </div>
+                           <div align="left">
+                            <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flex-direction:&nbsp;column;</font></font></font>
+                           </div>
+                           <div align="left">
+                            <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flex-grow:&nbsp;1;</font></font></font></font>
+                           </div>
+                           <div align="left">
+                            <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gap:&nbsp;4px;</font></font></font></font>
+                           </div>
+                           <div align="left">
+                            <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                           </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-controls&nbsp;button&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background:&nbsp;none;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border:&nbsp;none;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color:&nbsp;#f8d7b4;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;16px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cursor:&nbsp;pointer;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-controls&nbsp;audio&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:&nbsp;100%;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;.music-title&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-weight:&nbsp;bold;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size:&nbsp;12px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-bottom:&nbsp;2px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;@media&nbsp;(max-width:&nbsp;600px)&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.container&nbsp;{</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:&nbsp;20px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding:&nbsp;20px;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.music-floating&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max-width:&nbsp;90%;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bottom:&nbsp;15px;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;right:&nbsp;5%;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;flex-direction:&nbsp;column;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;align-items:&nbsp;center;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;/style&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/head&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;body&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;!--&nbsp;Stickers&nbsp;de&nbsp;fondo&nbsp;--&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;img&nbsp;class="sticker"&nbsp;src="snoopy.png"&nbsp;alt="Snoopy"&nbsp;/&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;img&nbsp;class="sticker"&nbsp;src="hello-kitty.png"&nbsp;alt="Hello&nbsp;Kitty"&nbsp;/&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;img&nbsp;class="sticker"&nbsp;src="pacheco.png"&nbsp;alt="Pacheco"&nbsp;/&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;img&nbsp;class="sticker"&nbsp;src="my-melody.png"&nbsp;alt="My&nbsp;Melody"&nbsp;/&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;img&nbsp;class="sticker"&nbsp;src="snoopy.png"&nbsp;alt="Snoopy"&nbsp;/&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&lt;div&nbsp;class="container"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Para&nbsp;ti...&lt;/h1&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="letter"&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!--&nbsp;Tu&nbsp;carta&nbsp;completa&nbsp;aquí&nbsp;--&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Pega&nbsp;aquí&nbsp;la&nbsp;carta&nbsp;tal&nbsp;como&nbsp;la&nbsp;tenías&nbsp;antes...]</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;/div&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&lt;div&nbsp;class="music-floating"&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id="cover"&nbsp;class="music-cover"&nbsp;style="background-image:&nbsp;url('portada-musica.jpg');"&gt;&lt;/div&gt;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="music-controls"&gt;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;id="title"&nbsp;class="music-title"&gt;Hasta&nbsp;la&nbsp;muerte&lt;/div&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;audio&nbsp;id="audio"&nbsp;controls&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;source&nbsp;src="alas-rotas.mp3"&nbsp;type="audio/mpeg"&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/audio&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;style="display:&nbsp;flex;&nbsp;justify-content:&nbsp;space-between;&nbsp;width:&nbsp;100%;"&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick="togglePlay()"&gt;⏯️&lt;/button&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button&nbsp;onclick="nextSong()"&gt;⏭️&lt;/button&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;/div&gt;</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&lt;script&gt;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;songs&nbsp;=&nbsp;[</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;"Hasta&nbsp;la&nbsp;muerte",</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file:&nbsp;"alas-rotas.mp3",</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cover:&nbsp;"portada-musica.jpg"</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;},</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title:&nbsp;"Reina&nbsp;Pepiada",</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file:&nbsp;"reina-pepiada.mp3",</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cover:&nbsp;"portada-reina.jpg"</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;];</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;let&nbsp;currentSong&nbsp;=&nbsp;0;</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;audio&nbsp;=&nbsp;document.getElementById('audio');</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;title&nbsp;=&nbsp;document.getElementById('title');</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;cover&nbsp;=&nbsp;document.getElementById('cover');</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;loadSong(index)&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;const&nbsp;song&nbsp;=&nbsp;songs[index];</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;title.textContent&nbsp;=&nbsp;song.title;</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cover.style.backgroundImage&nbsp;=&nbsp;`url('${song.cover}')`;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio.src&nbsp;=&nbsp;song.file;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio.play();</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;nextSong()&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;currentSong&nbsp;=&nbsp;(currentSong&nbsp;+&nbsp;1)&nbsp;%&nbsp;songs.length;</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;loadSong(currentSong);</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><br>
+                              <div align="left">
+                              <font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;function&nbsp;togglePlay()&nbsp;{</font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(audio.paused)&nbsp;{</font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio.play();</font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;else&nbsp;{</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;audio.pause();</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&nbsp;&nbsp;}</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&nbsp;&nbsp;&lt;/script&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/body&gt;</font></font></font></font>
+                              </div>
+                              <div align="left">
+                              <font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;"><font style="font-size:16;">&lt;/html&gt;</font></font></font></font>
+                              </div></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></body></html>
